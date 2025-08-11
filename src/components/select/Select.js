@@ -19,7 +19,7 @@ export const Select = ({
   spaceTop,
   spaceBottom,
 }) => {
-  const { language } = useLanguage();
+  const { getLocalizedName } = useLanguage();
   const handleOnChange = (event) => {
     onChange(event.target.value);
   };
@@ -42,7 +42,7 @@ export const Select = ({
     >
       {options.map(({ id: optionValue, ...option }) => (
         <option key={optionValue} value={optionValue}>
-          {option[`name_${language}`] || option.name_en}
+          {getLocalizedName(option)}
         </option>
       ))}
     </select>

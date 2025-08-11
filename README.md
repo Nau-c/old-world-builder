@@ -1,31 +1,95 @@
 # Old World Builder
 
-The "Old World Builder" is an army builder for the [Games Workshop](https://www.games-workshop.com) tabletop game Warhammer: The Old World.
+**Creador de listas de ejército para Warhammer: The Old World**
 
-You can visit the site here: [old-world-builder.com](https://old-world-builder.com/)
+[![Build Status](https://github.com/nico-thiebes/old-world-builder/workflows/Deploy/badge.svg)](https://github.com/nico-thiebes/old-world-builder/actions)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fold-world-builder.com)](https://old-world-builder.com)
 
-## Contribution
+## Actualización 06-08-2025
 
-You can help to complete or translate missing or incomplete army datasets.
+### Nuevas Funcionalidades
 
-It is best to visit our [Discord](https://discord.gg/87nUyjUxTU) server beforehand.
+- **Atributo de Salvación**: Todas las unidades ahora incluyen el atributo de salvación (Sv) en sus estadísticas
+- **Exportación a PDF**: Las listas se pueden exportar directamente a formato PDF
+- **Exportación a Word/LibreOffice**: Las listas se pueden exportar a formato .docx compatible con Microsoft Word y LibreOffice
+- **Nuevo Diseño**: Colores modernos y atractivos con gradiente de fondo
+- **Traducción Completa al Español**: Cuando se selecciona español, se aplica a todo el contenido del juego
 
-More details can also be found on the [datasets editor](https://old-world-builder.com/datasets) page (outdated) and [custom datasets](https://old-world-builder.com/datasets) page.
+### Ejércitos Disponibles
 
-[Datasets JSON documentation](https://github.com/nthiebes/old-world-builder/blob/main/docs/datasets.md)
+#### Warhammer: The Old World
+- **Imperio del Hombre** - Completamente actualizado con todas las unidades y reglas
+- **Reino de Bretonia** - Incluye todas las órdenes de caballería
+- **Altos Elfos** - Con todas las variantes y unidades especiales
+- **Elfos Oscuros** - Ejército completo con todas las opciones
+- **Enanos** - Incluye todas las runas y unidades especiales
+- **Orcos y Goblins** - Con todas las tribus y variantes
+- **Condes Vampiro** - Ejército completo con necromancia
+- **Reyes Tumbas** - Con todas las unidades de Nehekhara
+- **Hombres Lagarto** - Incluye todas las unidades de Lustria
+- **Beastmen** - Brayherds completos con todas las variantes
+- **Caos** - Guerreros del Caos con todas las opciones
+- **Demonios del Caos** - Todos los ejércitos de demonios
+- **Enanos del Caos** - Ejército completo de Zharr-Naggrund
+- **Skaven** - Con todas las unidades y clanes
+- **Reinos de los Elfos Silvanos** - Ejército completo de Athel Loren
+- **Reinos de Cathay** - Gran Cathay con todas las unidades
+- **Reinos Ogros** - Ejército completo de las Montañas de los Lamentos
 
-If you'd like to work on a feature let's have a chat first in one of the open issues (or create a new one).
+### Características Principales
 
-## Feedback
+- **Creación de Listas**: Interfaz intuitiva para crear listas de ejército
+- **Validación Automática**: Verificación automática de las reglas de composición
+- **Múltiples Formatos de Exportación**: Texto, PDF, Word, Markdown
+- **Vista de Juego**: Modo especial para usar durante las partidas
+- **Estadísticas de Unidades**: Todas las estadísticas incluyen el atributo de salvación
+- **Objetos Mágicos**: Sistema completo de objetos mágicos con límites
+- **Hechizos**: Generación y selección de hechizos
+- **Múltiples Idiomas**: Soporte completo para español, inglés, alemán, francés, italiano, polaco y chino
 
-[Discord Server](https://discord.gg/87nUyjUxTU)
+### Tecnologías Utilizadas
 
-## Credits
+- React 17
+- Redux Toolkit
+- React Router
+- React Intl (internacionalización)
+- jsPDF (exportación a PDF)
+- docx (exportación a Word)
+- CSS3 con variables CSS personalizadas
 
-Fantasy icons by game-icons.net (CC BY 3.0).
+### Instalación y Desarrollo
 
-This web site is completely unofficial and in no way endorsed by Games Workshop Limited.
+```bash
+# Clonar el repositorio
+git clone https://github.com/nico-thiebes/old-world-builder.git
 
-## License
+# Instalar dependencias
+npm install
 
-This work is licensed under a [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) License.
+# Ejecutar en modo desarrollo
+npm start
+
+# Construir para producción
+npm run build
+```
+
+### Contribuir
+
+Este proyecto es de código abierto y acepta contribuciones. Puedes ayudar con:
+
+- Traducciones
+- Datos de ejércitos
+- Reportes de errores
+- Mejoras de funcionalidad
+
+### Licencia
+
+Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE.md](LICENSE.md) para más detalles.
+
+### Descargo de Responsabilidad
+
+Este sitio web es totalmente no oficial y no está respaldado de ninguna manera por Games Workshop Limited.
+
+---
+
+**Desarrollado con ❤️ por Nico Thiebes y la comunidad de Old World Builder**

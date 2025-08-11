@@ -8,6 +8,7 @@ import { Header, Main } from "../../components/page";
 import { Button } from "../../components/button";
 import { Expandable } from "../../components/expandable";
 import { useLanguage } from "../../utils/useLanguage";
+import { exportToPdf, exportToWord } from "../../utils/export-utils";
 
 import { getListAsText } from "./get-list-as-text";
 import "./Export.css";
@@ -347,6 +348,22 @@ export const Export = ({ isMobile }) => {
         )}
         <Button icon="download" href={textFileUrl} download={textFileName}>
           <FormattedMessage id="export.downloadAsText" />
+        </Button>
+
+        <Button 
+          icon="download" 
+          onClick={() => exportToPdf(list, listText, intl)}
+          spaceTop
+        >
+          <FormattedMessage id="export.downloadAsPdf" />
+        </Button>
+
+        <Button 
+          icon="download" 
+          onClick={() => exportToWord(list, listText, intl)}
+          spaceTop
+        >
+          <FormattedMessage id="export.downloadAsWord" />
         </Button>
 
         <hr />

@@ -1,66 +1,128 @@
-## Available Scripts
+# Old World Builder - Creado con Create React App
 
-In the project directory, you can run:
+## Actualización 06-08-2025
 
-### `yarn start`
+Este proyecto fue creado con [Create React App](https://github.com/facebook/create-react-app).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Nuevas Funcionalidades Implementadas
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Atributo de Salvación
+- Todas las unidades ahora incluyen el atributo de salvación (Sv) en sus estadísticas
+- Integrado en el componente Stats.js
+- Soporte completo en exportación e impresión
 
-### `yarn test`
+### Exportación Avanzada
+- **PDF**: Generación automática de PDFs con jsPDF
+- **Word/LibreOffice**: Exportación a formato .docx con la librería docx
+- **Texto**: Formatos compactos y minimalistas
+- **Markdown**: Soporte para formato Markdown
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Nuevo Diseño
+- Colores modernos con gradiente de fondo
+- Variables CSS personalizadas
+- Mejor experiencia de usuario
+- Diseño responsivo mejorado
 
-### `yarn build`
+### Traducción Completa al Español
+- Funciones de localización mejoradas
+- Soporte completo para contenido del juego
+- Aplicación automática a todo el contenido cuando se selecciona español
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Scripts Disponibles
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+En el directorio del proyecto, puedes ejecutar:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `npm start`
 
-### `yarn eject`
+Ejecuta la aplicación en modo desarrollo.\
+Abre [http://localhost:3000](http://localhost:3000) para verla en el navegador.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+La página se recargará automáticamente cuando hagas cambios.\
+También verás cualquier error de lint en la consola.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `npm test`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Lanza el test runner en modo interactivo.\
+Ver la sección sobre [running tests](https://facebook.github.io/create-react-app/docs/running-tests) para más información.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### `npm run build`
 
-## Learn More
+Construye la aplicación para producción en la carpeta `build`.\
+Agrupa correctamente React en modo producción y optimiza la construcción para el mejor rendimiento.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+La construcción se minimiza y los nombres de archivo incluyen los hashes.\
+Tu aplicación está lista para ser desplegada!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Ver la sección sobre [deployment](https://facebook.github.io/create-react-app/docs/deployment) para más información.
 
-### Code Splitting
+### `npm run eject`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Nota: esta es una operación unidireccional. Una vez que "ejectas", no puedes volver atrás!**
 
-### Analyzing the Bundle Size
+Si no estás satisfecho con la herramienta de construcción y las opciones de configuración, puedes "ejectar" en cualquier momento. Este comando eliminará la dependencia de un solo build de tu proyecto.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+En su lugar, copiará todos los archivos de configuración y las dependencias transitivas (webpack, Babel, ESLint, etc.) directamente en tu proyecto para que tengas control total sobre ellos. Todos los comandos excepto `eject` seguirán funcionando, pero apuntarán a los scripts copiados para que puedas ajustarlos. En este punto estás por tu cuenta.
 
-### Making a Progressive Web App
+No tienes que usar nunca `eject`. La funcionalidad curada es adecuada para implementaciones pequeñas y medianas, y no deberías sentir que necesitas usar esta característica. Sin embargo, entendemos que esta herramienta no sería útil si no pudieras personalizarla cuando estés listo para ello.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Aprende Más
 
-### Advanced Configuration
+Puedes aprender más en la [documentación de Create React App](https://facebook.github.io/create-react-app/docs/getting-started).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Para aprender React, revisa la [documentación de React](https://reactjs.org/).
 
-### Deployment
+### División de Código
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Esta sección ha sido movida aquí: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### `yarn build` fails to minify
+### Análisis del Bundle
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Esta sección ha sido movida aquí: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Hacer una App Web Progresiva
+
+Esta sección ha sido movida aquí: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Configuración Avanzada
+
+Esta sección ha sido movida aquí: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Despliegue
+
+Esta sección ha sido movida aquí: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` falla al minificar
+
+Esta sección ha sido movida aquí: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## Tecnologías Utilizadas
+
+- **React 17**: Framework principal
+- **Redux Toolkit**: Gestión de estado
+- **React Router**: Enrutamiento
+- **React Intl**: Internacionalización
+- **jsPDF**: Generación de PDFs
+- **docx**: Generación de documentos Word
+- **file-saver**: Descarga de archivos
+- **CSS3**: Estilos con variables CSS personalizadas
+
+## Estructura del Proyecto
+
+```
+old-world-builder/
+├── public/
+│   ├── games/           # Datos de ejércitos
+│   └── index.html
+├── src/
+│   ├── components/      # Componentes reutilizables
+│   ├── pages/          # Páginas de la aplicación
+│   ├── i18n/           # Archivos de traducción
+│   ├── utils/          # Utilidades y helpers
+│   └── state/          # Estado de Redux
+└── docs/               # Documentación
+```
+
+---
+
+**Versión**: 1.19.12  
+**Última Actualización**: 06-08-2025
