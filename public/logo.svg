@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="towerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#654321;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="hammerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C0C0C0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#808080;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C3E50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495E;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo circular -->
+  <circle cx="256" cy="256" r="240" fill="url(#backgroundGradient)" stroke="#1A252F" stroke-width="8"/>
+  
+  <!-- Torre medieval -->
+  <g id="tower">
+    <!-- Base de la torre -->
+    <rect x="180" y="320" width="152" height="80" fill="url(#towerGradient)" stroke="#654321" stroke-width="3"/>
+    
+    <!-- Cuerpo principal de la torre -->
+    <rect x="200" y="200" width="112" height="120" fill="url(#towerGradient)" stroke="#654321" stroke-width="3"/>
+    
+    <!-- Almenas en la parte superior -->
+    <rect x="200" y="180" width="112" height="20" fill="url(#towerGradient)" stroke="#654321" stroke-width="3"/>
+    
+    <!-- Almenas individuales -->
+    <rect x="210" y="180" width="8" height="20" fill="#654321"/>
+    <rect x="230" y="180" width="8" height="20" fill="#654321"/>
+    <rect x="250" y="180" width="8" height="20" fill="#654321"/>
+    <rect x="270" y="180" width="8" height="20" fill="#654321"/>
+    <rect x="290" y="180" width="8" height="20" fill="#654321"/>
+    <rect x="310" y="180" width="8" height="20" fill="#654321"/>
+    
+    <!-- Ventana de la torre -->
+    <rect x="235" y="240" width="42" height="60" fill="#1A252F" stroke="#654321" stroke-width="2"/>
+    <rect x="240" y="245" width="32" height="50" fill="#87CEEB"/>
+    
+    <!-- Puerta de la torre -->
+    <rect x="235" y="360" width="42" height="40" fill="#1A252F" stroke="#654321" stroke-width="2"/>
+    <rect x="240" y="365" width="32" height="30" fill="#8B4513"/>
+    
+    <!-- Detalles arquitectónicos -->
+    <line x1="200" y1="260" x2="312" y2="260" stroke="#654321" stroke-width="2"/>
+    <line x1="200" y1="300" x2="312" y2="300" stroke="#654321" stroke-width="2"/>
+  </g>
+  
+  <!-- Martillo de herrero cruzando la torre -->
+  <g id="hammer">
+    <!-- Mango del martillo -->
+    <rect x="140" y="220" width="232" height="16" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+    
+    <!-- Cabeza del martillo (izquierda) -->
+    <rect x="120" y="200" width="40" height="56" fill="url(#hammerGradient)" stroke="#654321" stroke-width="2"/>
+    <rect x="125" y="205" width="30" height="46" fill="#A0522D"/>
+    
+    <!-- Cabeza del martillo (derecha) -->
+    <rect x="352" y="200" width="40" height="56" fill="url(#hammerGradient)" stroke="#654321" stroke-width="2"/>
+    <rect x="357" y="205" width="30" height="46" fill="#A0522D"/>
+  </g>
+  
+  <!-- Símbolos heráldicos pequeños -->
+  <g id="heraldry">
+    <!-- Escudo izquierdo -->
+    <ellipse cx="160" cy="280" rx="20" ry="25" fill="#DC143C" stroke="#8B0000" stroke-width="2"/>
+    <path d="M 160 260 L 150 270 L 160 280 L 170 270 Z" fill="#FFD700"/>
+    
+    <!-- Escudo derecho -->
+    <ellipse cx="352" cy="280" rx="20" ry="25" fill="#4169E1" stroke="#000080" stroke-width="2"/>
+    <path d="M 352 260 L 342 270 L 352 280 L 362 270 Z" fill="#FFD700"/>
+  </g>
+  
+  <!-- Texto "OWB" estilizado -->
+  <text x="256" y="420" font-family="serif" font-size="48" font-weight="bold" text-anchor="middle" fill="#F4A460" stroke="#8B4513" stroke-width="1">
+    OWB
+  </text>
+  
+  <!-- Borde decorativo -->
+  <circle cx="256" cy="256" r="248" fill="none" stroke="#F4A460" stroke-width="4" stroke-dasharray="20,10"/>
+</svg>
