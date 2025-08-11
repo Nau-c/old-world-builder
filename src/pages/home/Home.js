@@ -31,10 +31,7 @@ import woodElves from "../../assets/army-icons/wood-elves.svg";
 import chaosDwarfs from "../../assets/army-icons/chaos-dwarfs.svg";
 import bretonnia from "../../assets/army-icons/bretonnia.svg";
 import cathay from "../../assets/army-icons/cathay.svg";
-import forg3dBanner from "../../assets/forg3d.jpg";
-import fantasyweltDe from "../../assets/fantasywelt_de.jpg";
-import fantasyweltEn from "../../assets/fantasywelt_en.jpg";
-import mwgForge from "../../assets/mwg-forge.gif";
+
 import { swap } from "../../utils/collection";
 import { useLanguage } from "../../utils/useLanguage";
 import { setLists } from "../../state/lists";
@@ -69,10 +66,7 @@ export const Home = ({ isMobile }) => {
   const MainComponent = isMobile ? Main : Fragment;
   const lists = useSelector((state) => state.lists);
   const location = useLocation();
-  const { language } = useLanguage();
-  const { timezone } = useTimezone();
   const dispatch = useDispatch();
-  const intl = useIntl();
   const resetState = () => {
     dispatch(setArmy(null));
     dispatch(setItems(null));
