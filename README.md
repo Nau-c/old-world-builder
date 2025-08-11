@@ -82,6 +82,10 @@ Este proyecto es de código abierto y acepta contribuciones. Puedes ayudar con:
 - Reportes de errores
 - Mejoras de funcionalidad
 
+### Publicidad
+
+El proyecto incluye espacios publicitarios personalizables en la página principal. Si estás interesado en promocionar tu negocio relacionado con juegos de mesa, miniaturas o productos de Warhammer, contacta para más información sobre las opciones disponibles.
+
 ### Licencia
 
 Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE.md](LICENSE.md) para más detalles.

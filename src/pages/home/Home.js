@@ -37,6 +37,7 @@ import mwgForge from "../../assets/mwg-forge.gif";
 import { swap } from "../../utils/collection";
 import { useLanguage } from "../../utils/useLanguage";
 import { setLists } from "../../state/lists";
+import { advertisements } from "../../config/advertisements";
 
 import "./Home.css";
 
@@ -176,51 +177,34 @@ export const Home = ({ isMobile }) => {
           </b>
         </p>
 
-        <a
-          className="home__banner-link"
-          href="https://tinyurl.com/Forg3dOWB"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={forg3dBanner}
-            className="home__banner-image"
-            alt={intl.formatMessage({ id: "home.forg3d" })}
-            loading="lazy"
-          />
-        </a>
-
-        {timezone === "europe" ? (
-          <a
-            className="home__banner-link"
-            href={`https://www.fantasywelt.de/?wsa=jcdi7h53acjhc${
-              language === "de" ? "&lang=ger" : "&lang=eng"
-            }`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={language === "de" ? fantasyweltDe : fantasyweltEn}
-              className="home__banner-image"
-              alt={intl.formatMessage({ id: "home.fantasywelt" })}
-              loading="lazy"
-            />
-          </a>
-        ) : (
-          <a
-            className="home__banner-link"
-            href="https://miniwargamingforge.com?sca_ref=6115787.XxehNS6tUCHiFExD"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={mwgForge}
-              className="home__banner-image"
-              alt={intl.formatMessage({ id: "home.mwgForge" })}
-              loading="lazy"
-            />
-          </a>
-        )}
+        {/* Espacios Publicitarios Dinámicos */}
+        {advertisements.map((ad) => (
+          ad.active && (
+            <div key={ad.id} className="home__advertisement">
+              <h3 className="home__ad-title">{ad.title}</h3>
+              <p className="home__ad-description">{ad.description}</p>
+              {ad.image ? (
+                <a
+                  href={ad.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="home__ad-banner"
+                >
+                  <img
+                    src={ad.image}
+                    alt={ad.title}
+                    className="home__ad-image"
+                    loading="lazy"
+                  />
+                </a>
+              ) : (
+                <div className="home__ad-placeholder">
+                  {ad.placeholder}
+                </div>
+              )}
+            </div>
+          )
+        ))}
       </MainComponent>
     </>
   );
