@@ -8,6 +8,7 @@ import { Helmet } from "react-helmet-async";
 import { Button } from "../../components/button";
 import { ListItem, OrderableList } from "../../components/list";
 import { Header, Main } from "../../components/page";
+import { Logo } from "../../components/logo";
 import { getAllPoints } from "../../utils/points";
 import { useTimezone } from "../../utils/useTimezone";
 import { setArmy } from "../../state/army";
@@ -99,13 +100,9 @@ export const Home = ({ isMobile }) => {
       <MainComponent>
         {!lists.length && (
           <>
-            <img
-              src={owb}
-              alt=""
-              width="100"
-              height="100"
-              className="home__logo"
-            />
+            <div className="home__logo-container">
+              <Logo size="large" className="home__logo" />
+            </div>
             <i className="home__empty">
               <FormattedMessage id="home.empty" />
             </i>

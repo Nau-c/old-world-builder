@@ -53,7 +53,9 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "sentry:sourcemaps": "sentry-cli sourcemaps inject --org booky --project old-world-builder ./build && sentry-cli sourcemaps upload --org booky --project old-world-builder ./build"
+    "sentry:sourcemaps": "sentry-cli sourcemaps inject --org booky --project old-world-builder ./build && sentry-cli sourcemaps upload --org booky --project old-world-builder ./build",
+    "convert-logos": "node scripts/convert-logos.js",
+    "generate-favicons": "npm run convert-logos"
   },
   "eslintConfig": {
     "extends": [

@@ -6,6 +6,7 @@ import { useIntl } from "react-intl";
 
 import { Button } from "../../components/button";
 import { Icon } from "../../components/icon";
+import { Logo } from "../../components/logo";
 
 import "./Header.css";
 
@@ -104,7 +105,8 @@ export const Header = ({
             {headline === "Old World Builder" ? (
               <h1 className="header__name">
                 <Link className="header__name-link" to="/">
-                  {headline}
+                  <Logo size="small" showText={false} />
+                  <span className="header__name-text">{headline}</span>
                 </Link>
               </h1>
             ) : (

@@ -14,6 +14,7 @@
 - **Exportación a Word/LibreOffice**: Las listas se pueden exportar a formato .docx compatible con Microsoft Word y LibreOffice
 - **Nuevo Diseño**: Colores modernos y atractivos con gradiente de fondo
 - **Traducción Completa al Español**: Cuando se selecciona español, se aplica a todo el contenido del juego
+- **Logo Personalizado**: Sistema completo de logos originales con temática de Warhammer
 
 ### Ejércitos Disponibles
 
@@ -56,6 +57,7 @@
 - jsPDF (exportación a PDF)
 - docx (exportación a Word)
 - CSS3 con variables CSS personalizadas
+- SVG para logos y iconos personalizados
 
 ### Instalación y Desarrollo
 

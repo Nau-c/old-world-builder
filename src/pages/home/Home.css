@@ -18,9 +18,14 @@
   margin-bottom: 0;
 }
 
+.home__logo-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
 .home__logo {
   display: block;
-  margin: 2rem auto;
 }
 
 .home__description {
