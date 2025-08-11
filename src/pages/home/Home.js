@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet-async";
 import { Button } from "../../components/button";
 import { ListItem, OrderableList } from "../../components/list";
 import { Header, Main } from "../../components/page";
-import { Logo } from "../../components/logo";
+import Logo from "../../components/logo";
 import { getAllPoints } from "../../utils/points";
 import { useTimezone } from "../../utils/useTimezone";
 import { setArmy } from "../../state/army";

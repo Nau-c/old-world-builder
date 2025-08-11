@@ -6,7 +6,7 @@ import { useIntl } from "react-intl";
 
 import { Button } from "../../components/button";
 import { Icon } from "../../components/icon";
-import { Logo } from "../../components/logo";
+import Logo from "../../components/logo";
 
 import "./Header.css";
 
