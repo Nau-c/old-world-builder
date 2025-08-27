@@ -136,6 +136,7 @@
   "unit.a": "A",
   "unit.ld": "L",
   "unit.sv": "Sv",
+  "unit.special_sv": "Sv*",
   "changelog.title": "Novedades",
   "changelog.change0": "Nuevo editor de {datasets} para hacer más sencillas las contribuciones. Puede expandir la información existente de los ejércitos, añadir traducciones, o crear un nuevo dataset.",
   "changelog.change1": "Ahora es posible imprimir una lista sin puntos ni objetos mágicos.",
