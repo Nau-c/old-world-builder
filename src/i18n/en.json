@@ -158,6 +158,8 @@
   "unit.i": "I",
   "unit.a": "A",
   "unit.ld": "Ld",
+  "unit.sv": "Sv",
+  "unit.special_sv": "Sv*",
   "unit.customNote": "Your notes:",
   "unit.fullCommand": "Full Command",
   "black-orc-warboss": "Black Orc Warboss",

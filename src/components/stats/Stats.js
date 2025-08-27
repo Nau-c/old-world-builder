@@ -46,6 +46,9 @@ export const Stats = ({ values, isPrintPage, className }) => {
             <th>
               <FormattedMessage id="unit.sv" />
             </th>
+            <th>
+              <FormattedMessage id="unit.special_sv" />
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -62,6 +65,7 @@ export const Stats = ({ values, isPrintPage, className }) => {
               <td>{stats.A}</td>
               <td>{stats.Ld}</td>
               <td>{stats.Sv || "-"}</td>
+              <td>{stats.Special_Sv || "-"}</td>
             </tr>
           ))}
         </tbody>
